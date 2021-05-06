@@ -26,10 +26,10 @@ wp db create
 
 wp core install --url=$url --title="$title" --admin_user=$admin_user --admin_password=$admin_password --admin_email=$admin_email
 
-wp plugin install query-monitor all-in-one-wp-migration --activate
-# wp plugin install generateblocks duplicate-post
-
 wp plugin delete hello akismet
+
+# wp plugin install query-monitor all-in-one-wp-migration generateblocks duplicate-post --activate
+
 # wp theme install generatepress --activate
 
 echo "----- Installation is complete -----"
