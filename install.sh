@@ -8,13 +8,14 @@ title='sitename'
 admin_user='admin'
 admin_password='12345'
 admin_email='v.kamuz@gmail.com'
+dbhost='localhost'
 dbname='sitename'
 dbuser='root'
 dbpass='root'
 
 wp core download --skip-content --force
 
-wp config create --dbname=$dbname --dbuser=$dbuser --dbpass=$dbpass --extra-php <<PHP
+wp config create --dbhost=$dbhost --dbname=$dbname --dbuser=$dbuser --dbpass=$dbpass --extra-php <<PHP
 define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
 define( 'WP_DEBUG_DISPLAY', false );
